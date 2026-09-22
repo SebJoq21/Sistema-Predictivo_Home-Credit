@@ -1,0 +1,62 @@
+# ==========================================
+# 1. Entornos de Desarrollo y Python
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+.env
+
+# ==========================================
+# 2. Jupyter Notebooks
+# ==========================================
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# ==========================================
+# 3. Datos Masivos (CRÍTICO)
+# ==========================================
+# Ignorar las carpetas de datos pesados por completo
+data/raw/*
+data/processed/*
+
+# Permitir explícitamente la carpeta de muestra
+!data/sample/
+!data/sample/.gitkeep
+
+# Ignorar formatos de datos pesados en cualquier parte por seguridad
+*.csv
+*.parquet
+*.h5
+*.hdf5
+
+# Excepciones: Permitir diccionarios o listas pequeñas si son necesarias
+!diccionario_*.csv
+!lista_*.csv
+
+# ==========================================
+# 4. Modelos Entrenados Pesados
+# ==========================================
+models/*.pkl
+models/*.joblib
+models/*.onnx
+models/*.pb
+!models/.gitkeep
+
+# ==========================================
+# 5. Node.js y Express (API REST)
+# ==========================================
+services/api-express/node_modules/
+services/api-express/dist/
+services/api-express/build/
+services/api-express/.oxlint_cache/
+npm-debug.log
+yarn-error.log
+
+# ==========================================
+# 6. Sistema Operativo
+# ==========================================
+.DS_Store
+Thumbs.db
