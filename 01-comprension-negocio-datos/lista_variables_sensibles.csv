@@ -1,0 +1,12 @@
+variable,tabla,porque_sensible,riesgo,accion_fase1,accion_fase5
+CODE_GENDER,application_train.csv,genero del cliente,discriminacion directa por sexo,auditar distribucion TARGET por genero; no usar para decidir exclusion aún,evaluar excluir; medir paridad >=0.8 y revisar proxies
+DAYS_BIRTH,application_train.csv,edad (dias relativos),discriminacion por edad,auditar correlacion edad vs TARGET y vs EXT_SOURCE,evaluar excluir/anonimizar por rangos; paridad por grupo etario
+NAME_FAMILY_STATUS,application_train.csv,estado civil,proxy de vulnerabilidad,tabla de contingencia vs TARGET,solo descriptivo; si aporta sesgo excluir
+NAME_TYPE_SUITE,application_train.csv,acompañante al solicitar,proxy social,descriptivo vs TARGET,excluir por defecto salvo justificacion
+OCCUPATION_TYPE,application_train.csv,ocupacion,proxy socioeconomico,descriptivo + nulos vs TARGET,permitida solo agregada; vigilar leakage ocupacional
+NAME_INCOME_TYPE,application_train.csv,tipo de ingreso,proxy socioeconomico,descriptivo vs TARGET,permitida con auditoria
+NAME_EDUCATION_TYPE,application_train.csv,educacion,proxy socioeconomico,descriptivo vs TARGET,permitida con auditoria
+REGION_RATING_CLIENT,application_train.csv,rating region,segregacion geografica,descriptivo vs TARGET + mapa,permitida solo si paridad >=0.8
+REGION_RATING_CLIENT_W_CITY,application_train.csv,rating region+ciudad,segregacion geografica,descriptivo vs TARGET,igual que anterior
+FLAG_OWN_CAR/FLAG_OWN_REALTY + OWN_CAR_AGE,application_train.csv,activos/vivienda,proxy riqueza (no sensible per se pero vigilar),nulos 66% como señal informativa; flags binarios,permitidos; no imputar valor del activo
+EXT_SOURCE_1/2/3,application_train.csv,scores externos anonimizados,pueden heredar sesgo del buro,correlacion con sensibles + nulos (EXT1 56.4% EXT3 19.8% EXT2 0.2%),auditoria de sesgo heredado en Fase 5
