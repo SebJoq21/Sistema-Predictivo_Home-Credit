@@ -259,7 +259,7 @@
       {
         "paso": "columnas excluidas",
         "detalle": "FLAG_MOBIL, FLAG_DOCUMENT_2, FLAG_DOCUMENT_4, FLAG_DOCUMENT_7, FLAG_DOCUMENT_10, FLAG_DOCUMENT_12, FLAG_DOCUMENT_17, FLAG_DOCUMENT_19, FLAG_DOCUMENT_20, FLAG_DOCUMENT_21",
-        "filas": NaN
+        "filas": null
       },
       {
         "paso": "DAYS_EMPLOYED centinela -> NaN + FLAG_NO_EMPLEADO",
@@ -299,7 +299,7 @@
       {
         "paso": "banderas FALTA_*",
         "detalle": "24 banderas (umbral 5.0%)",
-        "filas": NaN
+        "filas": null
       }
     ]
   }
