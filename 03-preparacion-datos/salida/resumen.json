@@ -1,0 +1,306 @@
+{
+  "generado": "2026-10-13 10:14:20",
+  "parametros": {
+    "UMBRAL_VACIO": 95.0,
+    "UMBRAL_CONSTANTE": 99.9,
+    "UMBRAL_BANDERA": 5.0,
+    "CHUNKSIZE": 1000000
+  },
+  "application_train": {
+    "filas": 307511,
+    "columnas": 122,
+    "tasa_mora_%": 8.0729
+  },
+  "secundarias": {
+    "seleccion": [
+      {
+        "tabla": "bureau",
+        "filas_total": 1716428,
+        "filas_en_train": 1465325,
+        "filas_fuera_de_train": 251103,
+        "pct_en_train": 85.3706,
+        "columnas": 17
+      },
+      {
+        "tabla": "bureau_balance",
+        "filas_total": 27299925,
+        "filas_en_train": 14701612,
+        "filas_fuera_de_train": 12598313,
+        "pct_en_train": 53.8522,
+        "columnas": 3
+      },
+      {
+        "tabla": "previous_application",
+        "filas_total": 1670214,
+        "filas_en_train": 1413701,
+        "filas_fuera_de_train": 256513,
+        "pct_en_train": 84.6419,
+        "columnas": 37
+      },
+      {
+        "tabla": "POS_CASH_balance",
+        "filas_total": 10001358,
+        "filas_en_train": 8543375,
+        "filas_fuera_de_train": 1457983,
+        "pct_en_train": 85.4221,
+        "columnas": 8
+      },
+      {
+        "tabla": "installments_payments",
+        "filas_total": 13605401,
+        "filas_en_train": 11591592,
+        "filas_fuera_de_train": 2013809,
+        "pct_en_train": 85.1985,
+        "columnas": 8
+      },
+      {
+        "tabla": "credit_card_balance",
+        "filas_total": 3840312,
+        "filas_en_train": 3227965,
+        "filas_fuera_de_train": 612347,
+        "pct_en_train": 84.0548,
+        "columnas": 23
+      }
+    ],
+    "duplicados": [
+      {
+        "tabla": "bureau",
+        "filas": 1716428,
+        "llave_evaluada": "SK_ID_BUREAU",
+        "duplicados_fila_completa": 0,
+        "pct_dup_fila_completa": 0.0,
+        "duplicados_por_llave": 0,
+        "pct_dup_llave": 0.0
+      },
+      {
+        "tabla": "bureau_balance",
+        "filas": 27299925,
+        "llave_evaluada": "SK_ID_BUREAU+MONTHS_BALANCE",
+        "duplicados_fila_completa": 0,
+        "pct_dup_fila_completa": 0.0,
+        "duplicados_por_llave": 0,
+        "pct_dup_llave": 0.0
+      },
+      {
+        "tabla": "previous_application",
+        "filas": 1670214,
+        "llave_evaluada": "SK_ID_PREV",
+        "duplicados_fila_completa": 0,
+        "pct_dup_fila_completa": 0.0,
+        "duplicados_por_llave": 0,
+        "pct_dup_llave": 0.0
+      },
+      {
+        "tabla": "POS_CASH_balance",
+        "filas": 10001358,
+        "llave_evaluada": "SK_ID_PREV+MONTHS_BALANCE",
+        "duplicados_fila_completa": 0,
+        "pct_dup_fila_completa": 0.0,
+        "duplicados_por_llave": 0,
+        "pct_dup_llave": 0.0
+      },
+      {
+        "tabla": "installments_payments",
+        "filas": 13605401,
+        "llave_evaluada": "SK_ID_PREV+NUM_INSTALMENT_VERSION+NUM_INSTALMENT_NUMBER",
+        "duplicados_fila_completa": 0,
+        "pct_dup_fila_completa": 0.0,
+        "duplicados_por_llave": 653483,
+        "pct_dup_llave": 4.8031
+      },
+      {
+        "tabla": "credit_card_balance",
+        "filas": 3840312,
+        "llave_evaluada": "SK_ID_PREV+MONTHS_BALANCE",
+        "duplicados_fila_completa": 0,
+        "pct_dup_fila_completa": 0.0,
+        "duplicados_por_llave": 0,
+        "pct_dup_llave": 0.0
+      }
+    ]
+  },
+  "faltantes": {
+    "columnas_con_nulos": 67,
+    "columnas_totales": 122,
+    "columnas_mas_50pct": 41
+  },
+  "centinela_days_employed": {
+    "filas_centinela": 55374,
+    "pct": 18.0072,
+    "mora_centinela_%": 5.4,
+    "mora_resto_%": 8.66,
+    "tipos_ingreso_en_centinela": {
+      "Pensioner": 55352,
+      "Unemployed": 22
+    }
+  },
+  "duplicados_application": {
+    "filas": 307511,
+    "duplicados_fila_completa": 0,
+    "SK_ID_CURR_repetidos": 0
+  },
+  "inconsistencias": [
+    {
+      "chequeo": "DAYS_BIRTH >= 0 (debe ser negativo)",
+      "filas_afectadas": 0,
+      "pct": 0.0
+    },
+    {
+      "chequeo": "Edad < 18 o > 100 años",
+      "filas_afectadas": 0,
+      "pct": 0.0
+    },
+    {
+      "chequeo": "DAYS_EMPLOYED = centinela 365243",
+      "filas_afectadas": 55374,
+      "pct": 18.0072
+    },
+    {
+      "chequeo": "DAYS_EMPLOYED positivo distinto del centinela",
+      "filas_afectadas": 0,
+      "pct": 0.0
+    },
+    {
+      "chequeo": "Años empleado > edad",
+      "filas_afectadas": 0,
+      "pct": 0.0
+    },
+    {
+      "chequeo": "Empezó a trabajar antes de los 14 años",
+      "filas_afectadas": 0,
+      "pct": 0.0
+    },
+    {
+      "chequeo": "CODE_GENDER = XNA",
+      "filas_afectadas": 4,
+      "pct": 0.0013
+    },
+    {
+      "chequeo": "ORGANIZATION_TYPE = XNA",
+      "filas_afectadas": 55374,
+      "pct": 18.0072
+    },
+    {
+      "chequeo": "ORGANIZATION_TYPE = XNA y centinela de empleo (coinciden)",
+      "filas_afectadas": 55374,
+      "pct": 18.0072
+    },
+    {
+      "chequeo": "CNT_FAM_MEMBERS < CNT_CHILDREN",
+      "filas_afectadas": 0,
+      "pct": 0.0
+    },
+    {
+      "chequeo": "AMT_INCOME_TOTAL <= 0",
+      "filas_afectadas": 0,
+      "pct": 0.0
+    },
+    {
+      "chequeo": "AMT_CREDIT <= 0",
+      "filas_afectadas": 0,
+      "pct": 0.0
+    },
+    {
+      "chequeo": "AMT_ANNUITY > AMT_CREDIT",
+      "filas_afectadas": 0,
+      "pct": 0.0
+    },
+    {
+      "chequeo": "FLAG_OWN_CAR = N pero OWN_CAR_AGE informado",
+      "filas_afectadas": 0,
+      "pct": 0.0
+    },
+    {
+      "chequeo": "FLAG_OWN_CAR = Y pero OWN_CAR_AGE vacío",
+      "filas_afectadas": 5,
+      "pct": 0.0016
+    },
+    {
+      "chequeo": "EXT_SOURCE_1 fuera de [0,1]",
+      "filas_afectadas": 0,
+      "pct": 0.0
+    },
+    {
+      "chequeo": "EXT_SOURCE_2 fuera de [0,1]",
+      "filas_afectadas": 0,
+      "pct": 0.0
+    },
+    {
+      "chequeo": "EXT_SOURCE_3 fuera de [0,1]",
+      "filas_afectadas": 0,
+      "pct": 0.0
+    },
+    {
+      "chequeo": "DAYS_REGISTRATION > 0 (debe ser negativo)",
+      "filas_afectadas": 0,
+      "pct": 0.0
+    },
+    {
+      "chequeo": "DAYS_ID_PUBLISH > 0 (debe ser negativo)",
+      "filas_afectadas": 0,
+      "pct": 0.0
+    }
+  ],
+  "columnas_excluidas": 12,
+  "limpieza": {
+    "antes": {
+      "filas": 307511,
+      "columnas": 122,
+      "nulos_totales": 9152465,
+      "memoria_MB": 529.5
+    },
+    "despues": {
+      "filas": 307511,
+      "columnas": 141,
+      "nulos_totales": 9263217,
+      "memoria_MB": 107.0
+    },
+    "pasos": [
+      {
+        "paso": "columnas excluidas",
+        "detalle": "FLAG_MOBIL, FLAG_DOCUMENT_2, FLAG_DOCUMENT_4, FLAG_DOCUMENT_7, FLAG_DOCUMENT_10, FLAG_DOCUMENT_12, FLAG_DOCUMENT_17, FLAG_DOCUMENT_19, FLAG_DOCUMENT_20, FLAG_DOCUMENT_21",
+        "filas": NaN
+      },
+      {
+        "paso": "DAYS_EMPLOYED centinela -> NaN + FLAG_NO_EMPLEADO",
+        "detalle": "",
+        "filas": 55374
+      },
+      {
+        "paso": "CODE_GENDER: XNA -> NaN",
+        "detalle": "",
+        "filas": 4
+      },
+      {
+        "paso": "ORGANIZATION_TYPE: XNA -> NaN",
+        "detalle": "",
+        "filas": 55374
+      },
+      {
+        "paso": "AMT_INCOME_TOTAL: topeo p99.9",
+        "detalle": "tope=900000.00",
+        "filas": 278
+      },
+      {
+        "paso": "OBS_30_CNT_SOCIAL_CIRCLE: topeo p99.9",
+        "detalle": "tope=17.00",
+        "filas": 222
+      },
+      {
+        "paso": "OBS_60_CNT_SOCIAL_CIRCLE: topeo p99.9",
+        "detalle": "tope=16.00",
+        "filas": 292
+      },
+      {
+        "paso": "AMT_REQ_CREDIT_BUREAU_QRT: topeo p99.9",
+        "detalle": "tope=4.00",
+        "filas": 108
+      },
+      {
+        "paso": "banderas FALTA_*",
+        "detalle": "24 banderas (umbral 5.0%)",
+        "filas": NaN
+      }
+    ]
+  }
+}
