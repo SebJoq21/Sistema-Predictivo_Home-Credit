@@ -1,0 +1,17 @@
+{
+  "total_filas": 307511,
+  "columnas": 245,
+  "train_filas": 246008,
+  "val_filas": 61503,
+  "train_mora_casos": 19860,
+  "val_mora_casos": 4965,
+  "train_mora_pct": 8.0729,
+  "val_mora_pct": 8.0728,
+  "interseccion_sk_id_curr": 0,
+  "topes_p999_calculados_en_train": {
+    "AMT_INCOME_TOTAL": 900000.0,
+    "OBS_30_CNT_SOCIAL_CIRCLE": 17.0,
+    "OBS_60_CNT_SOCIAL_CIRCLE": 16.0,
+    "AMT_REQ_CREDIT_BUREAU_QRT": 4.0
+  }
+}

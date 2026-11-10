@@ -1,0 +1,20 @@
+feature,grupo,formula
+TIENE_BUREAU,Presencia relacional,"1 si el cliente registra créditos en bureau.csv, 0 si no tiene buró"
+TIENE_PREV_APP,Presencia relacional,"1 si el cliente tiene solicitudes previas en Home Credit, 0 en caso contrario"
+TIENE_TARJETA,Presencia relacional,"1 si el cliente pertenece a la subpoblación con tarjeta de crédito (33.7%), 0 si no"
+CREDIT_TO_INCOME_RATIO,Ratios financieros,AMT_CREDIT / AMT_INCOME_TOTAL
+ANNUITY_TO_INCOME_RATIO,Ratios financieros,AMT_ANNUITY / AMT_INCOME_TOTAL (carga financiera mensual sobre ingreso)
+ANNUITY_TO_CREDIT_RATIO,Ratios financieros,AMT_ANNUITY / AMT_CREDIT (inverso del plazo implícito del préstamo)
+CREDIT_TO_GOODS_RATIO,Ratios financieros,AMT_CREDIT / AMT_GOODS_PRICE (sobre-financiamiento respecto al bien)
+INCOME_PER_FAM_MEMBER,Ratios financieros,AMT_INCOME_TOTAL / CNT_FAM_MEMBERS
+EDAD_ANIOS,Temporales,-DAYS_BIRTH / 365.25
+ANIOS_EMPLEO,Temporales,-DAYS_EMPLOYED / 365.25 (NaN cuando FLAG_NO_EMPLEADO=1)
+EMPLEO_A_EDAD_RATIO,Temporales,ANIOS_EMPLEO / EDAD_ANIOS
+EXT_SOURCE_MEAN,Scores externos,"Promedio de EXT_SOURCE_1, EXT_SOURCE_2 y EXT_SOURCE_3 disponibles"
+EXT_SOURCE_MIN,Scores externos,"Mínimo entre EXT_SOURCE_1, EXT_SOURCE_2 y EXT_SOURCE_3"
+EXT_SOURCE_MAX,Scores externos,"Máximo entre EXT_SOURCE_1, EXT_SOURCE_2 y EXT_SOURCE_3"
+EXT_SOURCE_STD,Scores externos,Desviación estándar entre los 3 scores externos
+EXT_SOURCE_PROD,Scores externos,Producto de EXT_SOURCE_1 * EXT_SOURCE_2 * EXT_SOURCE_3
+HIST_DPD_TOTAL_EVENTS,Historial de pago,"Suma de eventos/meses con atraso en buró, POS, cuotas y tarjeta"
+HIST_HAS_ANY_DPD,Historial de pago,"1 si el cliente presenta al menos un atraso histórico en cualquier tabla, 0 si fue siempre puntual"
+TOTAL_DEBT_TO_INCOME_RATIO,Ratios financieros,(AMT_CREDIT + deuda activa en buró) / AMT_INCOME_TOTAL
