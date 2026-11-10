@@ -32,9 +32,11 @@ data/processed/*
 *.h5
 *.hdf5
 
-# Excepciones: Permitir diccionarios o listas pequeñas si son necesarias
+# Excepciones: Permitir diccionarios, muestras o tablas de resumen pequeñas si son necesarias
+!data/sample/*.csv
 !diccionario_*.csv
 !lista_*.csv
+!03-preparacion-datos/salida_fase3/tablas/*.csv
 
 # ==========================================
 # 4. Modelos Entrenados Pesados
