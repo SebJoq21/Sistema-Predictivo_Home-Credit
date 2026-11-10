@@ -1,0 +1,13 @@
+tabla,columna,motivo,decision
+application_train,FLAG_MOBIL,casi constante (valor dominante 99.9997%),excluir
+application_train,FLAG_DOCUMENT_2,casi constante (valor dominante 99.9958%),excluir
+application_train,FLAG_DOCUMENT_4,casi constante (valor dominante 99.9919%),excluir
+application_train,FLAG_DOCUMENT_7,casi constante (valor dominante 99.9808%),excluir
+application_train,FLAG_DOCUMENT_10,casi constante (valor dominante 99.9977%),excluir
+application_train,FLAG_DOCUMENT_12,casi constante (valor dominante 99.9993%),excluir
+application_train,FLAG_DOCUMENT_17,casi constante (valor dominante 99.9733%),excluir
+application_train,FLAG_DOCUMENT_19,casi constante (valor dominante 99.9405%),excluir
+application_train,FLAG_DOCUMENT_20,casi constante (valor dominante 99.9493%),excluir
+application_train,FLAG_DOCUMENT_21,casi constante (valor dominante 99.9665%),excluir
+previous_application,RATE_INTEREST_PRIMARY,99.64% de nulos,excluir
+previous_application,RATE_INTEREST_PRIVILEGED,99.64% de nulos,excluir

@@ -1,0 +1,21 @@
+chequeo,filas_afectadas,pct
+DAYS_BIRTH >= 0 (debe ser negativo),0,0.0
+Edad < 18 o > 100 años,0,0.0
+DAYS_EMPLOYED = centinela 365243,55374,18.0072
+DAYS_EMPLOYED positivo distinto del centinela,0,0.0
+Años empleado > edad,0,0.0
+Empezó a trabajar antes de los 14 años,0,0.0
+CODE_GENDER = XNA,4,0.0013
+ORGANIZATION_TYPE = XNA,55374,18.0072
+ORGANIZATION_TYPE = XNA y centinela de empleo coinciden,55374,18.0072
+CNT_FAM_MEMBERS < CNT_CHILDREN,0,0.0
+AMT_INCOME_TOTAL <= 0,0,0.0
+AMT_CREDIT <= 0,0,0.0
+AMT_ANNUITY > AMT_CREDIT,0,0.0
+FLAG_OWN_CAR = N pero OWN_CAR_AGE informado,0,0.0
+FLAG_OWN_CAR = Y pero OWN_CAR_AGE vacío,5,0.0016
+"EXT_SOURCE_1 fuera de [0,1]",0,0.0
+"EXT_SOURCE_2 fuera de [0,1]",0,0.0
+"EXT_SOURCE_3 fuera de [0,1]",0,0.0
+DAYS_REGISTRATION > 0,0,0.0
+DAYS_ID_PUBLISH > 0,0,0.0
