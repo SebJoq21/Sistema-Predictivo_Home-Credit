@@ -1,0 +1,241 @@
+variable,familia,gain,gain_pct,split,split_pct,ranking_gain
+EXT_SOURCE_MEAN,Scores Externos (EXT_SOURCE),547841.2398,17.7036,389,1.4133,1
+ORGANIZATION_TYPE,"Demográficas, Empleo y Estabilidad",265439.9484,8.5777,2848,10.347,2
+EXT_SOURCE_PROD,Scores Externos (EXT_SOURCE),194664.6172,6.2906,378,1.3733,3
+ANNUITY_TO_CREDIT_RATIO,Ratios Financieros y Montos,96477.8108,3.1177,784,2.8483,4
+OCCUPATION_TYPE,"Demográficas, Empleo y Estabilidad",75303.0077,2.4334,757,2.7502,5
+CREDIT_TO_GOODS_RATIO,Ratios Financieros y Montos,54472.5244,1.7603,262,0.9519,6
+BUREAU_DEBT_RATIO_MEAN,Buró Externo (bureau + balance),52658.2814,1.7017,282,1.0245,7
+EXT_SOURCE_MAX,Scores Externos (EXT_SOURCE),50242.6225,1.6236,227,0.8247,8
+EXT_SOURCE_MIN,Scores Externos (EXT_SOURCE),50204.7478,1.6224,302,1.0972,9
+EXT_SOURCE_3,Scores Externos (EXT_SOURCE),44885.4671,1.4505,492,1.7875,10
+PREV_CNT_PAYMENT_MEAN,Solicitudes Previas y POS_CASH,41930.4727,1.355,332,1.2062,11
+EXT_SOURCE_1,Scores Externos (EXT_SOURCE),41007.3123,1.3252,401,1.4569,12
+AMT_ANNUITY,Ratios Financieros y Montos,38881.2217,1.2565,396,1.4387,13
+INST_LATE_RATIO,Pagos de Cuotas (installments),38664.0734,1.2494,212,0.7702,14
+INST_AMT_PAYMENT_SUM,Pagos de Cuotas (installments),35033.262,1.1321,283,1.0282,15
+PREV_APP_CREDIT_RATIO_MEAN,Solicitudes Previas y POS_CASH,32940.6053,1.0645,331,1.2025,16
+BUREAU_DAYS_CREDIT_MAX,Buró Externo (bureau + balance),31790.8345,1.0273,407,1.4787,17
+DAYS_BIRTH,"Demográficas, Empleo y Estabilidad",29547.1136,0.9548,367,1.3333,18
+INST_AMT_PAYMENT_MAX,Pagos de Cuotas (installments),28838.226,0.9319,353,1.2825,19
+PREV_AMT_ANNUITY_MEAN,Solicitudes Previas y POS_CASH,26566.2454,0.8585,326,1.1844,20
+OWN_CAR_AGE,"Demográficas, Empleo y Estabilidad",26553.6555,0.8581,217,0.7884,21
+CC_UTILIZATION_MAX,Tarjeta de Crédito (credit_card),25786.852,0.8333,175,0.6358,22
+PREV_AMT_DOWN_PAYMENT_MEAN,Solicitudes Previas y POS_CASH,25163.8855,0.8132,295,1.0718,23
+INST_DPD_MEAN,Pagos de Cuotas (installments),25148.2398,0.8127,155,0.5631,24
+PREV_REFUSAL_RATE,Solicitudes Previas y POS_CASH,25066.0459,0.81,141,0.5123,25
+AMT_GOODS_PRICE,Ratios Financieros y Montos,24873.0984,0.8038,259,0.941,26
+POS_MONTHS_COUNT,Solicitudes Previas y POS_CASH,24788.5009,0.801,288,1.0463,27
+BUREAU_AMT_OVERDUE_MAX,Buró Externo (bureau + balance),24731.7268,0.7992,255,0.9264,28
+INST_PAYMENT_TO_INSTALMENT_RATIO,Pagos de Cuotas (installments),23703.5269,0.766,194,0.7048,29
+CC_UTILIZATION_MEAN,Tarjeta de Crédito (credit_card),22811.0633,0.7371,139,0.505,30
+AMT_CREDIT,Ratios Financieros y Montos,22604.5947,0.7305,262,0.9519,31
+BUREAU_CREDIT_SUM_MEAN,Buró Externo (bureau + balance),22492.161,0.7268,281,1.0209,32
+PREV_DAYS_DECISION_MEAN,Solicitudes Previas y POS_CASH,22402.8219,0.724,294,1.0681,33
+EMPLEO_A_EDAD_RATIO,"Demográficas, Empleo y Estabilidad",22220.7747,0.7181,218,0.792,34
+ANIOS_EMPLEO,"Demográficas, Empleo y Estabilidad",21849.3838,0.7061,195,0.7084,35
+DAYS_EMPLOYED,"Demográficas, Empleo y Estabilidad",21596.144,0.6979,194,0.7048,36
+EXT_SOURCE_2,Scores Externos (EXT_SOURCE),21274.4171,0.6875,297,1.079,37
+PREV_DAYS_DECISION_MAX,Solicitudes Previas y POS_CASH,20605.8055,0.6659,323,1.1735,38
+DAYS_ID_PUBLISH,"Demográficas, Empleo y Estabilidad",20191.3982,0.6525,313,1.1371,39
+BUREAU_CREDIT_SUM_TOTAL,Buró Externo (bureau + balance),19788.5994,0.6395,262,0.9519,40
+BUREAU_TOTAL_DEBT_TO_CREDIT,Buró Externo (bureau + balance),19763.1952,0.6387,230,0.8356,41
+EDAD_ANIOS,"Demográficas, Empleo y Estabilidad",19750.1108,0.6382,251,0.9119,42
+BUREAU_CREDIT_SUM_MAX,Buró Externo (bureau + balance),19604.1292,0.6335,274,0.9955,43
+ANNUITY_TO_INCOME_RATIO,Ratios Financieros y Montos,19273.2244,0.6228,224,0.8138,44
+POS_INSTALMENT_FUTURE_SUM,Solicitudes Previas y POS_CASH,19231.9273,0.6215,322,1.1698,45
+EXT_SOURCE_STD,Scores Externos (EXT_SOURCE),18641.466,0.6024,299,1.0863,46
+DAYS_LAST_PHONE_CHANGE,"Demográficas, Empleo y Estabilidad",18619.3053,0.6017,278,1.01,47
+DAYS_REGISTRATION,"Demográficas, Empleo y Estabilidad",18262.5149,0.5902,312,1.1335,48
+TOTAL_DEBT_TO_INCOME_RATIO,Ratios Financieros y Montos,17851.9027,0.5769,269,0.9773,49
+BUREAU_DAYS_CREDIT_MEAN,Buró Externo (bureau + balance),16805.3459,0.5431,250,0.9083,50
+CC_MONTHS_COUNT,Tarjeta de Crédito (credit_card),16579.9154,0.5358,153,0.5559,51
+BUREAU_DAYS_ENDDATE_MEAN,Buró Externo (bureau + balance),16330.0832,0.5277,277,1.0064,52
+INST_DBD_SUM,Pagos de Cuotas (installments),16206.8835,0.5237,228,0.8283,53
+INST_AMT_INSTALMENT_SUM,Pagos de Cuotas (installments),15369.3868,0.4967,182,0.6612,54
+CREDIT_TO_INCOME_RATIO,Ratios Financieros y Montos,14852.6234,0.48,213,0.7738,55
+BUREAU_DAYS_CREDIT_MIN,Buró Externo (bureau + balance),14463.6918,0.4674,244,0.8865,56
+REGION_POPULATION_RELATIVE,"Demográficas, Empleo y Estabilidad",13979.5369,0.4518,240,0.8719,57
+INST_DBD_MEAN,Pagos de Cuotas (installments),13533.4365,0.4373,233,0.8465,58
+PREV_AMT_APPLICATION_MAX,Solicitudes Previas y POS_CASH,13297.3895,0.4297,218,0.792,59
+WEEKDAY_APPR_PROCESS_START,"Demográficas, Empleo y Estabilidad",13013.5595,0.4205,221,0.8029,60
+INST_COUNT,Pagos de Cuotas (installments),12579.0114,0.4065,171,0.6213,61
+PREV_APPROVAL_RATE,Solicitudes Previas y POS_CASH,12111.8687,0.3914,116,0.4214,62
+INST_PAYMENT_DIFF_MAX,Pagos de Cuotas (installments),10815.261,0.3495,167,0.6067,63
+INCOME_PER_FAM_MEMBER,Ratios Financieros y Montos,10790.1943,0.3487,194,0.7048,64
+PREV_AMT_CREDIT_SUM,Solicitudes Previas y POS_CASH,10675.9569,0.345,159,0.5777,65
+BUREAU_ACTIVE_COUNT,Buró Externo (bureau + balance),10268.4121,0.3318,116,0.4214,66
+PREV_AMT_APPLICATION_MEAN,Solicitudes Previas y POS_CASH,9868.7791,0.3189,168,0.6104,67
+BUREAU_DEBT_SUM_MEAN,Buró Externo (bureau + balance),9509.8813,0.3073,157,0.5704,68
+CC_DRAWINGS_ATM_SUM,Tarjeta de Crédito (credit_card),9248.8916,0.2989,114,0.4142,69
+CC_BALANCE_MEAN,Tarjeta de Crédito (credit_card),8674.9821,0.2803,85,0.3088,70
+PREV_AMT_CREDIT_MEAN,Solicitudes Previas y POS_CASH,8183.4997,0.2645,146,0.5304,71
+BUREAU_DEBT_SUM_TOTAL,Buró Externo (bureau + balance),8129.8457,0.2627,123,0.4469,72
+INST_UNDERPAID_RATIO,Pagos de Cuotas (installments),8069.0421,0.2608,101,0.3669,73
+CC_BALANCE_MAX,Tarjeta de Crédito (credit_card),7924.4065,0.2561,104,0.3778,74
+REGION_RATING_CLIENT_W_CITY,"Demográficas, Empleo y Estabilidad",7893.3114,0.2551,74,0.2688,75
+BUREAU_ACTIVE_RATIO,Buró Externo (bureau + balance),7852.1405,0.2537,133,0.4832,76
+INST_DPD_MAX,Pagos de Cuotas (installments),7807.1874,0.2523,92,0.3342,77
+BUREAU_BB_MONTHS_TOTAL,Buró Externo (bureau + balance),7802.8675,0.2522,132,0.4796,78
+AMT_INCOME_TOTAL,Ratios Financieros y Montos,7682.7138,0.2483,139,0.505,79
+FLAG_DOCUMENT_3,"Demográficas, Empleo y Estabilidad",7347.7661,0.2374,53,0.1926,80
+TOTALAREA_MODE,Vivienda y Banderas de Ausencia,7242.8343,0.2341,115,0.4178,81
+BUREAU_CREDIT_COUNT,Buró Externo (bureau + balance),7008.4927,0.2265,107,0.3887,82
+POS_DPD_DEF_MEAN,Solicitudes Previas y POS_CASH,6947.7385,0.2245,77,0.2797,83
+CC_LIMIT_MEAN,Tarjeta de Crédito (credit_card),6905.5856,0.2232,106,0.3851,84
+DEF_60_CNT_SOCIAL_CIRCLE,"Demográficas, Empleo y Estabilidad",6631.1698,0.2143,60,0.218,85
+BUREAU_BB_DPD_RATIO_MEAN,Buró Externo (bureau + balance),6598.9414,0.2132,106,0.3851,86
+YEARS_BEGINEXPLUATATION_MODE,Vivienda y Banderas de Ausencia,6293.0027,0.2034,94,0.3415,87
+HOUR_APPR_PROCESS_START,"Demográficas, Empleo y Estabilidad",6192.2464,0.2001,109,0.396,88
+APARTMENTS_MODE,Vivienda y Banderas de Ausencia,6186.8634,0.1999,93,0.3379,89
+NAME_CONTRACT_TYPE,"Demográficas, Empleo y Estabilidad",6164.7767,0.1992,43,0.1562,90
+CC_PAYMENT_TOTAL_SUM,Tarjeta de Crédito (credit_card),5892.1424,0.1904,91,0.3306,91
+INST_VERSION_MAX,Pagos de Cuotas (installments),5705.1965,0.1844,79,0.287,92
+APARTMENTS_AVG,Vivienda y Banderas de Ausencia,5684.2254,0.1837,83,0.3015,93
+INST_DPD_SUM,Pagos de Cuotas (installments),5395.6316,0.1744,82,0.2979,94
+BUREAU_ANNUITY_MEAN,Buró Externo (bureau + balance),5302.8359,0.1714,100,0.3633,95
+PREV_INSURED_MEAN,Solicitudes Previas y POS_CASH,5023.168,0.1623,94,0.3415,96
+LANDAREA_MODE,Vivienda y Banderas de Ausencia,5000.802,0.1616,89,0.3233,97
+DEF_30_CNT_SOCIAL_CIRCLE,"Demográficas, Empleo y Estabilidad",4990.7847,0.1613,49,0.178,98
+APARTMENTS_MEDI,Vivienda y Banderas de Ausencia,4913.5654,0.1588,72,0.2616,99
+LANDAREA_AVG,Vivienda y Banderas de Ausencia,4661.7784,0.1506,84,0.3052,100
+PREV_APPROVED_COUNT,Solicitudes Previas y POS_CASH,4629.5232,0.1496,60,0.218,101
+AMT_REQ_CREDIT_BUREAU_QRT,Buró Externo (bureau + balance),4617.2017,0.1492,57,0.2071,102
+NONLIVINGAREA_MODE,Vivienda y Banderas de Ausencia,4557.1201,0.1473,78,0.2834,103
+LIVINGAREA_MEDI,Vivienda y Banderas de Ausencia,4553.9268,0.1472,68,0.247,104
+REG_CITY_NOT_LIVE_CITY,"Demográficas, Empleo y Estabilidad",4455.8144,0.144,41,0.149,105
+YEARS_BEGINEXPLUATATION_MEDI,Vivienda y Banderas de Ausencia,4446.9956,0.1437,75,0.2725,106
+BUREAU_CLOSED_COUNT,Buró Externo (bureau + balance),4400.8569,0.1422,74,0.2688,107
+LIVINGAREA_AVG,Vivienda y Banderas de Ausencia,4390.4581,0.1419,58,0.2107,108
+COMMONAREA_MODE,Vivienda y Banderas de Ausencia,4248.84,0.1373,65,0.2361,109
+LIVINGAREA_MODE,Vivienda y Banderas de Ausencia,4220.9213,0.1364,63,0.2289,110
+LANDAREA_MEDI,Vivienda y Banderas de Ausencia,4146.1433,0.134,76,0.2761,111
+FALTA_EXT_SOURCE_1,Scores Externos (EXT_SOURCE),4066.7902,0.1314,23,0.0836,112
+BASEMENTAREA_AVG,Vivienda y Banderas de Ausencia,4001.01,0.1293,72,0.2616,113
+OBS_60_CNT_SOCIAL_CIRCLE,"Demográficas, Empleo y Estabilidad",3919.1461,0.1266,68,0.247,114
+YEARS_BUILD_MODE,Vivienda y Banderas de Ausencia,3881.8219,0.1254,62,0.2252,115
+NONLIVINGAREA_AVG,Vivienda y Banderas de Ausencia,3862.1611,0.1248,74,0.2688,116
+POS_COMPLETED_SUM,Solicitudes Previas y POS_CASH,3862.1168,0.1248,62,0.2252,117
+NAME_HOUSING_TYPE,"Demográficas, Empleo y Estabilidad",3800.6929,0.1228,59,0.2144,118
+CC_DRAWINGS_SUM,Tarjeta de Crédito (credit_card),3777.1579,0.1221,60,0.218,119
+NONLIVINGAREA_MEDI,Vivienda y Banderas de Ausencia,3760.0932,0.1215,64,0.2325,120
+BASEMENTAREA_MODE,Vivienda y Banderas de Ausencia,3705.9753,0.1198,67,0.2434,121
+FLAG_WORK_PHONE,"Demográficas, Empleo y Estabilidad",3682.1944,0.119,56,0.2035,122
+YEARS_BEGINEXPLUATATION_AVG,Vivienda y Banderas de Ausencia,3669.914,0.1186,59,0.2144,123
+LIVINGAPARTMENTS_MODE,Vivienda y Banderas de Ausencia,3626.6601,0.1172,60,0.218,124
+LIVINGAPARTMENTS_AVG,Vivienda y Banderas de Ausencia,3608.1954,0.1166,65,0.2361,125
+LIVINGAPARTMENTS_MEDI,Vivienda y Banderas de Ausencia,3601.9822,0.1164,59,0.2144,126
+PREV_APP_COUNT,Solicitudes Previas y POS_CASH,3516.5572,0.1136,60,0.218,127
+ENTRANCES_AVG,Vivienda y Banderas de Ausencia,3503.0866,0.1132,57,0.2071,128
+CNT_FAM_MEMBERS,"Demográficas, Empleo y Estabilidad",3298.0787,0.1066,45,0.1635,129
+POS_DPD_DEF_MAX,Solicitudes Previas y POS_CASH,3270.8272,0.1057,40,0.1453,130
+COMMONAREA_AVG,Vivienda y Banderas de Ausencia,3259.6829,0.1053,54,0.1962,131
+WALLSMATERIAL_MODE,Vivienda y Banderas de Ausencia,3143.9913,0.1016,45,0.1635,132
+OBS_30_CNT_SOCIAL_CIRCLE,"Demográficas, Empleo y Estabilidad",3049.3836,0.0985,56,0.2035,133
+FLOORSMIN_AVG,Vivienda y Banderas de Ausencia,2983.1456,0.0964,45,0.1635,134
+COMMONAREA_MEDI,Vivienda y Banderas de Ausencia,2956.0689,0.0955,53,0.1926,135
+PREV_REFUSED_COUNT,Solicitudes Previas y POS_CASH,2943.3667,0.0951,26,0.0945,136
+AMT_REQ_CREDIT_BUREAU_YEAR,Buró Externo (bureau + balance),2941.2039,0.095,55,0.1998,137
+NAME_INCOME_TYPE,"Demográficas, Empleo y Estabilidad",2902.5962,0.0938,38,0.1381,138
+BASEMENTAREA_MEDI,Vivienda y Banderas de Ausencia,2856.7916,0.0923,54,0.1962,139
+INST_UNDERPAID_COUNT,Pagos de Cuotas (installments),2840.713,0.0918,48,0.1744,140
+YEARS_BUILD_AVG,Vivienda y Banderas de Ausencia,2820.2342,0.0911,54,0.1962,141
+YEARS_BUILD_MEDI,Vivienda y Banderas de Ausencia,2548.1979,0.0823,47,0.1708,142
+FLOORSMAX_AVG,Vivienda y Banderas de Ausencia,2441.2391,0.0789,28,0.1017,143
+INST_LATE_COUNT,Pagos de Cuotas (installments),2436.8218,0.0787,43,0.1562,144
+POS_DPD_MONTHS_SUM,Solicitudes Previas y POS_CASH,2372.87,0.0767,44,0.1599,145
+HIST_DPD_TOTAL_EVENTS,Solicitudes Previas y POS_CASH,2319.1002,0.0749,38,0.1381,146
+BUREAU_AMT_OVERDUE_SUM,Buró Externo (bureau + balance),2317.3939,0.0749,35,0.1272,147
+POS_DPD_DEF_SUM,Solicitudes Previas y POS_CASH,2220.745,0.0718,37,0.1344,148
+POS_DPD_MONTHS_RATIO,Solicitudes Previas y POS_CASH,2171.2459,0.0702,41,0.149,149
+ELEVATORS_AVG,Vivienda y Banderas de Ausencia,2142.1649,0.0692,34,0.1235,150
+NONLIVINGAPARTMENTS_AVG,Vivienda y Banderas de Ausencia,2083.0472,0.0673,34,0.1235,151
+REGION_RATING_CLIENT,"Demográficas, Empleo y Estabilidad",2075.0084,0.0671,25,0.0908,152
+NAME_TYPE_SUITE,"Demográficas, Empleo y Estabilidad",1950.1362,0.063,36,0.1308,153
+POS_DPD_SUM,Solicitudes Previas y POS_CASH,1902.4688,0.0615,35,0.1272,154
+PREV_CANCELED_COUNT,Solicitudes Previas y POS_CASH,1682.8285,0.0544,29,0.1054,155
+POS_DPD_MEAN,Solicitudes Previas y POS_CASH,1586.9353,0.0513,27,0.0981,156
+ENTRANCES_MODE,Vivienda y Banderas de Ausencia,1568.3984,0.0507,29,0.1054,157
+ENTRANCES_MEDI,Vivienda y Banderas de Ausencia,1418.6515,0.0458,25,0.0908,158
+CC_DPD_MONTHS_SUM,Tarjeta de Crédito (credit_card),1399.7205,0.0452,21,0.0763,159
+FLOORSMAX_MEDI,Vivienda y Banderas de Ausencia,1387.8149,0.0448,17,0.0618,160
+FLAG_DOCUMENT_18,"Demográficas, Empleo y Estabilidad",1374.7786,0.0444,22,0.0799,161
+CC_DPD_RATIO,Tarjeta de Crédito (credit_card),1264.6014,0.0409,25,0.0908,162
+FLOORSMAX_MODE,Vivienda y Banderas de Ausencia,1229.5956,0.0397,14,0.0509,163
+ELEVATORS_MEDI,Vivienda y Banderas de Ausencia,1186.2253,0.0383,20,0.0727,164
+FLOORSMIN_MODE,Vivienda y Banderas de Ausencia,1167.6027,0.0377,20,0.0727,165
+FLAG_DOCUMENT_16,"Demográficas, Empleo y Estabilidad",1114.5891,0.036,17,0.0618,166
+POS_DPD_MAX,Solicitudes Previas y POS_CASH,1110.5204,0.0359,20,0.0727,167
+BUREAU_BB_DPD_MONTHS_SUM,Buró Externo (bureau + balance),1065.3748,0.0344,19,0.069,168
+FLOORSMIN_MEDI,Vivienda y Banderas de Ausencia,1050.8582,0.034,16,0.0581,169
+NONLIVINGAPARTMENTS_MEDI,Vivienda y Banderas de Ausencia,995.7917,0.0322,19,0.069,170
+AMT_REQ_CREDIT_BUREAU_MON,Buró Externo (bureau + balance),949.7298,0.0307,20,0.0727,171
+FLAG_DOCUMENT_13,"Demográficas, Empleo y Estabilidad",868.6174,0.0281,15,0.0545,172
+ELEVATORS_MODE,Vivienda y Banderas de Ausencia,841.0608,0.0272,14,0.0509,173
+NONLIVINGAPARTMENTS_MODE,Vivienda y Banderas de Ausencia,803.2812,0.026,16,0.0581,174
+FLAG_PHONE,"Demográficas, Empleo y Estabilidad",773.674,0.025,17,0.0618,175
+CC_DPD_SUM,Tarjeta de Crédito (credit_card),771.2574,0.0249,16,0.0581,176
+POS_DPD_DEF_MONTHS_SUM,Solicitudes Previas y POS_CASH,694.2934,0.0224,13,0.0472,177
+FONDKAPREMONT_MODE,Vivienda y Banderas de Ausencia,690.4246,0.0223,13,0.0472,178
+HIST_HAS_ANY_DPD,Solicitudes Previas y POS_CASH,675.5665,0.0218,7,0.0254,179
+REG_CITY_NOT_WORK_CITY,"Demográficas, Empleo y Estabilidad",647.8984,0.0209,13,0.0472,180
+CNT_CHILDREN,"Demográficas, Empleo y Estabilidad",627.8006,0.0203,12,0.0436,181
+BUREAU_PROLONG_SUM,Buró Externo (bureau + balance),598.5749,0.0193,12,0.0436,182
+LIVE_CITY_NOT_WORK_CITY,"Demográficas, Empleo y Estabilidad",459.9671,0.0149,8,0.0291,183
+CC_DPD_DEF_MAX,Tarjeta de Crédito (credit_card),431.3902,0.0139,7,0.0254,184
+CC_DPD_MAX,Tarjeta de Crédito (credit_card),409.8085,0.0132,8,0.0291,185
+FLAG_DOCUMENT_8,"Demográficas, Empleo y Estabilidad",393.6654,0.0127,4,0.0145,186
+FALTA_EXT_SOURCE_3,Scores Externos (EXT_SOURCE),383.337,0.0124,3,0.0109,187
+FLAG_OWN_REALTY,"Demográficas, Empleo y Estabilidad",379.0036,0.0122,7,0.0254,188
+AMT_REQ_CREDIT_BUREAU_WEEK,Buró Externo (bureau + balance),371.7619,0.012,7,0.0254,189
+AMT_REQ_CREDIT_BUREAU_DAY,Buró Externo (bureau + balance),366.301,0.0118,7,0.0254,190
+REG_REGION_NOT_WORK_REGION,"Demográficas, Empleo y Estabilidad",301.6251,0.0097,5,0.0182,191
+REG_REGION_NOT_LIVE_REGION,"Demográficas, Empleo y Estabilidad",253.3378,0.0082,7,0.0254,192
+LIVE_REGION_NOT_WORK_REGION,"Demográficas, Empleo y Estabilidad",250.6274,0.0081,3,0.0109,193
+BUREAU_BAD_DEBT_COUNT,Buró Externo (bureau + balance),240.7776,0.0078,5,0.0182,194
+HOUSETYPE_MODE,Vivienda y Banderas de Ausencia,228.3721,0.0074,3,0.0109,195
+FALTA_OCCUPATION_TYPE,Vivienda y Banderas de Ausencia,192.6611,0.0062,4,0.0145,196
+FLAG_EMAIL,"Demográficas, Empleo y Estabilidad",187.5295,0.0061,3,0.0109,197
+FLAG_DOCUMENT_15,"Demográficas, Empleo y Estabilidad",146.5279,0.0047,4,0.0145,198
+FLAG_DOCUMENT_14,"Demográficas, Empleo y Estabilidad",139.2808,0.0045,4,0.0145,199
+BUREAU_BB_SEVERE_DPD_SUM,Buró Externo (bureau + balance),128.9038,0.0042,3,0.0109,200
+BUREAU_DAY_OVERDUE_MAX,Buró Externo (bureau + balance),111.5296,0.0036,2,0.0073,201
+FLAG_DOCUMENT_5,"Demográficas, Empleo y Estabilidad",84.8043,0.0027,2,0.0073,202
+FLAG_OWN_CAR,"Demográficas, Empleo y Estabilidad",81.0979,0.0026,2,0.0073,203
+FALTA_FONDKAPREMONT_MODE,Vivienda y Banderas de Ausencia,55.5673,0.0018,1,0.0036,204
+FALTA_LANDAREA_MEDI,Vivienda y Banderas de Ausencia,49.9202,0.0016,1,0.0036,205
+FLAG_DOCUMENT_6,"Demográficas, Empleo y Estabilidad",48.3135,0.0016,1,0.0036,206
+BUREAU_DAY_OVERDUE_MEAN,Buró Externo (bureau + balance),33.5993,0.0011,1,0.0036,207
+FLAG_DOCUMENT_11,"Demográficas, Empleo y Estabilidad",33.3635,0.0011,1,0.0036,208
+EMERGENCYSTATE_MODE,Vivienda y Banderas de Ausencia,4.5311,0.0001,1,0.0036,209
+FALTA_NONLIVINGAPARTMENTS_MEDI,Vivienda y Banderas de Ausencia,0.0,0.0,0,0.0,210
+FALTA_FLOORSMIN_MODE,Vivienda y Banderas de Ausencia,0.0,0.0,0,0.0,211
+FALTA_LIVINGAPARTMENTS_AVG,Vivienda y Banderas de Ausencia,0.0,0.0,0,0.0,212
+FALTA_YEARS_BUILD_AVG,Vivienda y Banderas de Ausencia,0.0,0.0,0,0.0,213
+FALTA_COMMONAREA_AVG,Vivienda y Banderas de Ausencia,0.0,0.0,0,0.0,214
+FALTA_ELEVATORS_AVG,Vivienda y Banderas de Ausencia,0.0,0.0,0,0.0,215
+FALTA_APARTMENTS_AVG,Vivienda y Banderas de Ausencia,0.0,0.0,0,0.0,216
+FALTA_ENTRANCES_MODE,Vivienda y Banderas de Ausencia,0.0,0.0,0,0.0,217
+FALTA_TOTALAREA_MODE,Vivienda y Banderas de Ausencia,0.0,0.0,0,0.0,218
+FALTA_EMERGENCYSTATE_MODE,Vivienda y Banderas de Ausencia,0.0,0.0,0,0.0,219
+FALTA_WALLSMATERIAL_MODE,Vivienda y Banderas de Ausencia,0.0,0.0,0,0.0,220
+FALTA_FLOORSMAX_MODE,Vivienda y Banderas de Ausencia,0.0,0.0,0,0.0,221
+FALTA_YEARS_BEGINEXPLUATATION_MODE,Vivienda y Banderas de Ausencia,0.0,0.0,0,0.0,222
+FALTA_BASEMENTAREA_MODE,Vivienda y Banderas de Ausencia,0.0,0.0,0,0.0,223
+FALTA_AMT_REQ_CREDIT_BUREAU_HOUR,Buró Externo (bureau + balance),0.0,0.0,0,0.0,224
+FALTA_NONLIVINGAREA_MODE,Vivienda y Banderas de Ausencia,0.0,0.0,0,0.0,225
+FALTA_HOUSETYPE_MODE,Vivienda y Banderas de Ausencia,0.0,0.0,0,0.0,226
+FALTA_LIVINGAREA_AVG,Vivienda y Banderas de Ausencia,0.0,0.0,0,0.0,227
+FLAG_NO_EMPLEADO,"Demográficas, Empleo y Estabilidad",0.0,0.0,0,0.0,228
+FLAG_EMP_PHONE,"Demográficas, Empleo y Estabilidad",0.0,0.0,0,0.0,229
+TIENE_BUREAU,Buró Externo (bureau + balance),0.0,0.0,0,0.0,230
+FALTA_OWN_CAR_AGE,Vivienda y Banderas de Ausencia,0.0,0.0,0,0.0,231
+TIENE_TARJETA,Tarjeta de Crédito (credit_card),0.0,0.0,0,0.0,232
+TIENE_PREV_APP,Solicitudes Previas y POS_CASH,0.0,0.0,0,0.0,233
+TOPEADO_AMT_INCOME_TOTAL,Ratios Financieros y Montos,0.0,0.0,0,0.0,234
+FLAG_DOCUMENT_9,"Demográficas, Empleo y Estabilidad",0.0,0.0,0,0.0,235
+TOPEADO_AMT_REQ_CREDIT_BUREAU_QRT,Buró Externo (bureau + balance),0.0,0.0,0,0.0,236
+AMT_REQ_CREDIT_BUREAU_HOUR,Buró Externo (bureau + balance),0.0,0.0,0,0.0,237
+TOPEADO_OBS_30_CNT_SOCIAL_CIRCLE,"Demográficas, Empleo y Estabilidad",0.0,0.0,0,0.0,238
+FLAG_CONT_MOBILE,"Demográficas, Empleo y Estabilidad",0.0,0.0,0,0.0,239
+TOPEADO_OBS_60_CNT_SOCIAL_CIRCLE,"Demográficas, Empleo y Estabilidad",0.0,0.0,0,0.0,240

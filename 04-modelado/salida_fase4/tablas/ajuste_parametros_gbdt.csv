@@ -1,0 +1,5 @@
+configuracion,algoritmo,scale_pos_weight,num_leaves_o_depth,regularizacion,best_iteration,tiempo_seg,roc_auc_train,roc_auc_val,gap_roc_auc,pr_auc_val,ks_val,recall_050_val,mcc_050_val,costo_opt_por_solicitud
+"LGBM-1: Sin pesos (scale_pos_weight=1.0, leaves=31, lr=0.05)",LightGBM,1.0,"leaves=31, depth=-1","min_child=20, L1=0, L2=0",355,35.98,0.86785,0.78448,0.08337,0.28275,0.43361,0.04451,0.14675,80.3132
+"LGBM-2: Complejo con pesos (scale_pos_weight=11.3871, leaves=63, lr=0.05)",LightGBM,11.3871,"leaves=63, depth=-1","min_child=20, L1=0, L2=0",253,32.62,0.89361,0.78461,0.109,0.28128,0.43167,0.65055,0.25663,80.5205
+"LGBM-3 (Candidato): Regularizado con pesos (leaves=31, depth=6, lr=0.03, L1=2, L2=5)",LightGBM,11.3871,"leaves=31, depth=6","min_child=100, L1=2.0, L2=5.0, cat_smooth=20",929,74.1,0.87982,0.78865,0.09117,0.2872,0.44086,0.66083,0.26452,79.3303
+"XGB-4 (Candidato): Hist + NaN nativo (depth=5, min_child=80, lr=0.05, L1=2, L2=5)",XGBoost,11.3871,depth=5 (max 32 hojas),"min_child_weight=80, L1=2.0, L2=5.0, col=0.75",448,242.09,0.84397,0.78641,0.05756,0.28515,0.43609,0.68238,0.25974,79.7522

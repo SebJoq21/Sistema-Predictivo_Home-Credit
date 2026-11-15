@@ -1,0 +1,541 @@
+{
+  "scale_pos_weight": 11.3871,
+  "parameter_study": [
+    {
+      "configuracion": "LGBM-1: Sin pesos (scale_pos_weight=1.0, leaves=31, lr=0.05)",
+      "algoritmo": "LightGBM",
+      "scale_pos_weight": 1.0,
+      "num_leaves_o_depth": "leaves=31, depth=-1",
+      "regularizacion": "min_child=20, L1=0, L2=0",
+      "best_iteration": 355,
+      "tiempo_seg": 35.98,
+      "roc_auc_train": 0.86785,
+      "roc_auc_val": 0.78448,
+      "gap_roc_auc": 0.08337,
+      "pr_auc_val": 0.28275,
+      "ks_val": 0.43361,
+      "recall_050_val": 0.04451,
+      "mcc_050_val": 0.14675,
+      "costo_opt_por_solicitud": 80.3132
+    },
+    {
+      "configuracion": "LGBM-2: Complejo con pesos (scale_pos_weight=11.3871, leaves=63, lr=0.05)",
+      "algoritmo": "LightGBM",
+      "scale_pos_weight": 11.3871,
+      "num_leaves_o_depth": "leaves=63, depth=-1",
+      "regularizacion": "min_child=20, L1=0, L2=0",
+      "best_iteration": 253,
+      "tiempo_seg": 32.62,
+      "roc_auc_train": 0.89361,
+      "roc_auc_val": 0.78461,
+      "gap_roc_auc": 0.109,
+      "pr_auc_val": 0.28128,
+      "ks_val": 0.43167,
+      "recall_050_val": 0.65055,
+      "mcc_050_val": 0.25663,
+      "costo_opt_por_solicitud": 80.5205
+    },
+    {
+      "configuracion": "LGBM-3 (Candidato): Regularizado con pesos (leaves=31, depth=6, lr=0.03, L1=2, L2=5)",
+      "algoritmo": "LightGBM",
+      "scale_pos_weight": 11.3871,
+      "num_leaves_o_depth": "leaves=31, depth=6",
+      "regularizacion": "min_child=100, L1=2.0, L2=5.0, cat_smooth=20",
+      "best_iteration": 929,
+      "tiempo_seg": 74.1,
+      "roc_auc_train": 0.87982,
+      "roc_auc_val": 0.78865,
+      "gap_roc_auc": 0.09117,
+      "pr_auc_val": 0.2872,
+      "ks_val": 0.44086,
+      "recall_050_val": 0.66083,
+      "mcc_050_val": 0.26452,
+      "costo_opt_por_solicitud": 79.3303
+    },
+    {
+      "configuracion": "XGB-4 (Candidato): Hist + NaN nativo (depth=5, min_child=80, lr=0.05, L1=2, L2=5)",
+      "algoritmo": "XGBoost",
+      "scale_pos_weight": 11.3871,
+      "num_leaves_o_depth": "depth=5 (max 32 hojas)",
+      "regularizacion": "min_child_weight=80, L1=2.0, L2=5.0, col=0.75",
+      "best_iteration": 448,
+      "tiempo_seg": 242.09,
+      "roc_auc_train": 0.84397,
+      "roc_auc_val": 0.78641,
+      "gap_roc_auc": 0.05756,
+      "pr_auc_val": 0.28515,
+      "ks_val": 0.43609,
+      "recall_050_val": 0.68238,
+      "mcc_050_val": 0.25974,
+      "costo_opt_por_solicitud": 79.7522
+    }
+  ],
+  "lightgbm_candidate": {
+    "hyperparameters": {
+      "objective": "binary",
+      "metric": "auc",
+      "n_estimators": 1500,
+      "learning_rate": 0.03,
+      "num_leaves": 31,
+      "max_depth": 6,
+      "min_child_samples": 100,
+      "scale_pos_weight": 11.3871,
+      "subsample": 0.8,
+      "subsample_freq": 1,
+      "colsample_bytree": 0.75,
+      "reg_alpha": 2.0,
+      "reg_lambda": 5.0,
+      "cat_smooth": 20.0,
+      "min_data_per_group": 100,
+      "random_state": 42,
+      "n_jobs": 4,
+      "verbose": -1
+    },
+    "best_iteration": 929,
+    "train_time_sec": 74.1,
+    "train": {
+      "roc_auc": 0.87982,
+      "pr_auc": 0.40741,
+      "ks": 0.60041,
+      "threshold_050": {
+        "threshold": 0.5,
+        "accuracy": 0.78006,
+        "precision": 0.24387,
+        "recall": 0.8209,
+        "f1": 0.37603,
+        "mcc": 0.36581,
+        "tn": 175599,
+        "fp": 50549,
+        "fn": 3557,
+        "tp": 16303,
+        "total_cost_pen": 13984950.0,
+        "cost_per_applicant_pen": 56.8475
+      },
+      "threshold_optimal_cost": {
+        "threshold": 0.465,
+        "accuracy": 0.75031,
+        "precision": 0.22548,
+        "recall": 0.85952,
+        "f1": 0.35724,
+        "mcc": 0.35427,
+        "tn": 167512,
+        "fp": 58636,
+        "fn": 2790,
+        "tp": 17070,
+        "total_cost_pen": 13817400.0,
+        "cost_per_applicant_pen": 56.1665
+      }
+    },
+    "val": {
+      "roc_auc": 0.78865,
+      "pr_auc": 0.2872,
+      "ks": 0.44086,
+      "threshold_050": {
+        "threshold": 0.5,
+        "accuracy": 0.75969,
+        "precision": 0.20034,
+        "recall": 0.66083,
+        "f1": 0.30747,
+        "mcc": 0.26452,
+        "tn": 43442,
+        "fp": 13096,
+        "fn": 1684,
+        "tp": 3281,
+        "total_cost_pen": 4995600.0,
+        "cost_per_applicant_pen": 81.2253
+      },
+      "threshold_optimal_cost": {
+        "threshold": 0.445,
+        "accuracy": 0.71187,
+        "precision": 0.181,
+        "recall": 0.7289,
+        "f1": 0.29,
+        "mcc": 0.25547,
+        "tn": 40163,
+        "fp": 16375,
+        "fn": 1346,
+        "tp": 3619,
+        "total_cost_pen": 4879050.0,
+        "cost_per_applicant_pen": 79.3303
+      }
+    },
+    "generalization_gap_roc_auc": 0.09117,
+    "model_artifact": "models/modelo_candidato_lgbm.pkl",
+    "top_15_features": [
+      {
+        "variable": "EXT_SOURCE_MEAN",
+        "familia": "Scores Externos (EXT_SOURCE)",
+        "gain": 547841.2398,
+        "gain_pct": 17.7036,
+        "split": 389,
+        "split_pct": 1.4133,
+        "ranking_gain": 1
+      },
+      {
+        "variable": "ORGANIZATION_TYPE",
+        "familia": "Demográficas, Empleo y Estabilidad",
+        "gain": 265439.9484,
+        "gain_pct": 8.5777,
+        "split": 2848,
+        "split_pct": 10.347,
+        "ranking_gain": 2
+      },
+      {
+        "variable": "EXT_SOURCE_PROD",
+        "familia": "Scores Externos (EXT_SOURCE)",
+        "gain": 194664.6172,
+        "gain_pct": 6.2906,
+        "split": 378,
+        "split_pct": 1.3733,
+        "ranking_gain": 3
+      },
+      {
+        "variable": "ANNUITY_TO_CREDIT_RATIO",
+        "familia": "Ratios Financieros y Montos",
+        "gain": 96477.8108,
+        "gain_pct": 3.1177,
+        "split": 784,
+        "split_pct": 2.8483,
+        "ranking_gain": 4
+      },
+      {
+        "variable": "OCCUPATION_TYPE",
+        "familia": "Demográficas, Empleo y Estabilidad",
+        "gain": 75303.0077,
+        "gain_pct": 2.4334,
+        "split": 757,
+        "split_pct": 2.7502,
+        "ranking_gain": 5
+      },
+      {
+        "variable": "CREDIT_TO_GOODS_RATIO",
+        "familia": "Ratios Financieros y Montos",
+        "gain": 54472.5244,
+        "gain_pct": 1.7603,
+        "split": 262,
+        "split_pct": 0.9519,
+        "ranking_gain": 6
+      },
+      {
+        "variable": "BUREAU_DEBT_RATIO_MEAN",
+        "familia": "Buró Externo (bureau + balance)",
+        "gain": 52658.2814,
+        "gain_pct": 1.7017,
+        "split": 282,
+        "split_pct": 1.0245,
+        "ranking_gain": 7
+      },
+      {
+        "variable": "EXT_SOURCE_MAX",
+        "familia": "Scores Externos (EXT_SOURCE)",
+        "gain": 50242.6225,
+        "gain_pct": 1.6236,
+        "split": 227,
+        "split_pct": 0.8247,
+        "ranking_gain": 8
+      },
+      {
+        "variable": "EXT_SOURCE_MIN",
+        "familia": "Scores Externos (EXT_SOURCE)",
+        "gain": 50204.7478,
+        "gain_pct": 1.6224,
+        "split": 302,
+        "split_pct": 1.0972,
+        "ranking_gain": 9
+      },
+      {
+        "variable": "EXT_SOURCE_3",
+        "familia": "Scores Externos (EXT_SOURCE)",
+        "gain": 44885.4671,
+        "gain_pct": 1.4505,
+        "split": 492,
+        "split_pct": 1.7875,
+        "ranking_gain": 10
+      },
+      {
+        "variable": "PREV_CNT_PAYMENT_MEAN",
+        "familia": "Solicitudes Previas y POS_CASH",
+        "gain": 41930.4727,
+        "gain_pct": 1.355,
+        "split": 332,
+        "split_pct": 1.2062,
+        "ranking_gain": 11
+      },
+      {
+        "variable": "EXT_SOURCE_1",
+        "familia": "Scores Externos (EXT_SOURCE)",
+        "gain": 41007.3123,
+        "gain_pct": 1.3252,
+        "split": 401,
+        "split_pct": 1.4569,
+        "ranking_gain": 12
+      },
+      {
+        "variable": "AMT_ANNUITY",
+        "familia": "Ratios Financieros y Montos",
+        "gain": 38881.2217,
+        "gain_pct": 1.2565,
+        "split": 396,
+        "split_pct": 1.4387,
+        "ranking_gain": 13
+      },
+      {
+        "variable": "INST_LATE_RATIO",
+        "familia": "Pagos de Cuotas (installments)",
+        "gain": 38664.0734,
+        "gain_pct": 1.2494,
+        "split": 212,
+        "split_pct": 0.7702,
+        "ranking_gain": 14
+      },
+      {
+        "variable": "INST_AMT_PAYMENT_SUM",
+        "familia": "Pagos de Cuotas (installments)",
+        "gain": 35033.262,
+        "gain_pct": 1.1321,
+        "split": 283,
+        "split_pct": 1.0282,
+        "ranking_gain": 15
+      }
+    ],
+    "family_importance": [
+      {
+        "familia": "Scores Externos (EXT_SOURCE)",
+        "n_variables": 10,
+        "gain_pct_total": 31.45,
+        "split_pct_total": 10.21,
+        "top_variable": "EXT_SOURCE_MEAN"
+      },
+      {
+        "familia": "Demográficas, Empleo y Estabilidad",
+        "n_variables": 53,
+        "gain_pct_total": 20.77,
+        "split_pct_total": 26.78,
+        "top_variable": "ORGANIZATION_TYPE"
+      },
+      {
+        "familia": "Solicitudes Previas y POS_CASH",
+        "n_variables": 32,
+        "gain_pct_total": 10.98,
+        "split_pct_total": 15.15,
+        "top_variable": "PREV_CNT_PAYMENT_MEAN"
+      },
+      {
+        "familia": "Buró Externo (bureau + balance)",
+        "n_variables": 35,
+        "gain_pct_total": 10.31,
+        "split_pct_total": 14.65,
+        "top_variable": "BUREAU_DEBT_RATIO_MEAN"
+      },
+      {
+        "familia": "Ratios Financieros y Montos",
+        "n_variables": 11,
+        "gain_pct_total": 9.95,
+        "split_pct_total": 10.91,
+        "top_variable": "ANNUITY_TO_CREDIT_RATIO"
+      },
+      {
+        "familia": "Pagos de Cuotas (installments)",
+        "n_variables": 16,
+        "gain_pct_total": 8.15,
+        "split_pct_total": 9.53,
+        "top_variable": "INST_LATE_RATIO"
+      },
+      {
+        "familia": "Vivienda y Banderas de Ausencia",
+        "n_variables": 68,
+        "gain_pct_total": 4.78,
+        "split_pct_total": 8.77,
+        "top_variable": "TOTALAREA_MODE"
+      },
+      {
+        "familia": "Tarjeta de Crédito (credit_card)",
+        "n_variables": 15,
+        "gain_pct_total": 3.62,
+        "split_pct_total": 4.01,
+        "top_variable": "CC_UTILIZATION_MAX"
+      }
+    ]
+  },
+  "xgboost_candidate": {
+    "hyperparameters": {
+      "objective": "binary:logistic",
+      "eval_metric": "auc",
+      "tree_method": "hist",
+      "n_estimators": 450,
+      "learning_rate": 0.05,
+      "max_depth": 5,
+      "min_child_weight": 80,
+      "scale_pos_weight": 11.3871,
+      "subsample": 0.8,
+      "colsample_bytree": 0.75,
+      "reg_alpha": 2.0,
+      "reg_lambda": 5.0,
+      "early_stopping_rounds": 40,
+      "random_state": 42,
+      "n_jobs": 2
+    },
+    "best_iteration": 448,
+    "train_time_sec": 242.09,
+    "train": {
+      "roc_auc": 0.84397,
+      "pr_auc": 0.34887,
+      "ks": 0.5288,
+      "threshold_050": {
+        "threshold": 0.5,
+        "accuracy": 0.75597,
+        "precision": 0.21645,
+        "recall": 0.77205,
+        "f1": 0.33811,
+        "mcc": 0.31682,
+        "tn": 170642,
+        "fp": 55506,
+        "fn": 4527,
+        "tp": 15333,
+        "total_cost_pen": 16474500.0,
+        "cost_per_applicant_pen": 66.9673
+      },
+      "threshold_optimal_cost": {
+        "threshold": 0.475,
+        "accuracy": 0.73263,
+        "precision": 0.20477,
+        "recall": 0.80176,
+        "f1": 0.32622,
+        "mcc": 0.30955,
+        "tn": 164309,
+        "fp": 61839,
+        "fn": 3937,
+        "tp": 15923,
+        "total_cost_pen": 16362450.0,
+        "cost_per_applicant_pen": 66.5119
+      }
+    },
+    "val": {
+      "roc_auc": 0.78641,
+      "pr_auc": 0.28515,
+      "ks": 0.43609,
+      "threshold_050": {
+        "threshold": 0.5,
+        "accuracy": 0.74323,
+        "precision": 0.19247,
+        "recall": 0.68238,
+        "f1": 0.30025,
+        "mcc": 0.25974,
+        "tn": 42323,
+        "fp": 14215,
+        "fn": 1577,
+        "tp": 3388,
+        "total_cost_pen": 4970850.0,
+        "cost_per_applicant_pen": 80.8229
+      },
+      "threshold_optimal_cost": {
+        "threshold": 0.46,
+        "accuracy": 0.70548,
+        "precision": 0.17815,
+        "recall": 0.73293,
+        "f1": 0.28663,
+        "mcc": 0.25218,
+        "tn": 39750,
+        "fp": 16788,
+        "fn": 1326,
+        "tp": 3639,
+        "total_cost_pen": 4905000.0,
+        "cost_per_applicant_pen": 79.7522
+      }
+    },
+    "generalization_gap_roc_auc": 0.05756,
+    "model_artifact": "models/modelo_candidato_xgb.pkl",
+    "top_15_features": [
+      {
+        "variable": "EXT_SOURCE_MEAN",
+        "familia": "Scores Externos (EXT_SOURCE)",
+        "gain_pct": 10.603500366210938,
+        "ranking_gain": 1
+      },
+      {
+        "variable": "EXT_SOURCE_PROD",
+        "familia": "Scores Externos (EXT_SOURCE)",
+        "gain_pct": 3.4258999824523926,
+        "ranking_gain": 2
+      },
+      {
+        "variable": "INST_LATE_RATIO",
+        "familia": "Pagos de Cuotas (installments)",
+        "gain_pct": 1.3341000080108643,
+        "ranking_gain": 3
+      },
+      {
+        "variable": "EXT_SOURCE_MIN",
+        "familia": "Scores Externos (EXT_SOURCE)",
+        "gain_pct": 1.3213000297546387,
+        "ranking_gain": 4
+      },
+      {
+        "variable": "BUREAU_DEBT_RATIO_MEAN",
+        "familia": "Buró Externo (bureau + balance)",
+        "gain_pct": 1.1380000114440918,
+        "ranking_gain": 5
+      },
+      {
+        "variable": "CREDIT_TO_GOODS_RATIO",
+        "familia": "Ratios Financieros y Montos",
+        "gain_pct": 1.090399980545044,
+        "ranking_gain": 6
+      },
+      {
+        "variable": "CC_UTILIZATION_MEAN",
+        "familia": "Tarjeta de Crédito (credit_card)",
+        "gain_pct": 1.0298000574111938,
+        "ranking_gain": 7
+      },
+      {
+        "variable": "PREV_REFUSAL_RATE",
+        "familia": "Solicitudes Previas y POS_CASH",
+        "gain_pct": 0.9101999998092651,
+        "ranking_gain": 8
+      },
+      {
+        "variable": "ANIOS_EMPLEO",
+        "familia": "Demográficas, Empleo y Estabilidad",
+        "gain_pct": 0.8162999749183655,
+        "ranking_gain": 9
+      },
+      {
+        "variable": "EXT_SOURCE_MAX",
+        "familia": "Scores Externos (EXT_SOURCE)",
+        "gain_pct": 0.801800012588501,
+        "ranking_gain": 10
+      },
+      {
+        "variable": "CC_UTILIZATION_MAX",
+        "familia": "Tarjeta de Crédito (credit_card)",
+        "gain_pct": 0.7671999931335449,
+        "ranking_gain": 11
+      },
+      {
+        "variable": "NAME_CONTRACT_TYPE",
+        "familia": "Demográficas, Empleo y Estabilidad",
+        "gain_pct": 0.765999972820282,
+        "ranking_gain": 12
+      },
+      {
+        "variable": "FLAG_DOCUMENT_3",
+        "familia": "Demográficas, Empleo y Estabilidad",
+        "gain_pct": 0.7616000175476074,
+        "ranking_gain": 13
+      },
+      {
+        "variable": "INST_AMT_PAYMENT_SUM",
+        "familia": "Pagos de Cuotas (installments)",
+        "gain_pct": 0.7487999796867371,
+        "ranking_gain": 14
+      },
+      {
+        "variable": "PREV_CNT_PAYMENT_MEAN",
+        "familia": "Solicitudes Previas y POS_CASH",
+        "gain_pct": 0.7422000169754028,
+        "ranking_gain": 15
+      }
+    ]
+  }
+}

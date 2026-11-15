@@ -1,0 +1,9 @@
+familia,n_variables,gain_pct_total,split_pct_total,top_variable
+Scores Externos (EXT_SOURCE),10,31.45,10.21,EXT_SOURCE_MEAN
+"Demográficas, Empleo y Estabilidad",53,20.77,26.78,ORGANIZATION_TYPE
+Solicitudes Previas y POS_CASH,32,10.98,15.15,PREV_CNT_PAYMENT_MEAN
+Buró Externo (bureau + balance),35,10.31,14.65,BUREAU_DEBT_RATIO_MEAN
+Ratios Financieros y Montos,11,9.95,10.91,ANNUITY_TO_CREDIT_RATIO
+Pagos de Cuotas (installments),16,8.15,9.53,INST_LATE_RATIO
+Vivienda y Banderas de Ausencia,68,4.78,8.77,TOTALAREA_MODE
+Tarjeta de Crédito (credit_card),15,3.62,4.01,CC_UTILIZATION_MAX
