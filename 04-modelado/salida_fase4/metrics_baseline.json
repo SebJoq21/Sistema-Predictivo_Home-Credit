@@ -1,0 +1,165 @@
+{
+  "dataset": {
+    "use_sample": false,
+    "train_rows": 246008,
+    "val_rows": 61503,
+    "n_features": 240,
+    "n_numerical": 227,
+    "n_categorical": 13,
+    "train_mora_pct": 8.0729,
+    "val_mora_pct": 8.0728
+  },
+  "dummy_control": {
+    "strategy": "most_frequent",
+    "train_time_sec": 0.03,
+    "train": {
+      "roc_auc": 0.5,
+      "pr_auc": 0.08073,
+      "ks": 0.0,
+      "threshold_050": {
+        "threshold": 0.5,
+        "accuracy": 0.91927,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mcc": 0.0,
+        "tn": 226148,
+        "fp": 0,
+        "fn": 19860,
+        "tp": 0,
+        "total_cost_pen": 35748000.0,
+        "cost_per_applicant_pen": 145.3123
+      },
+      "threshold_optimal_cost": {
+        "threshold": 0.05,
+        "accuracy": 0.91927,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mcc": 0.0,
+        "tn": 226148,
+        "fp": 0,
+        "fn": 19860,
+        "tp": 0,
+        "total_cost_pen": 35748000.0,
+        "cost_per_applicant_pen": 145.3123
+      }
+    },
+    "val": {
+      "roc_auc": 0.5,
+      "pr_auc": 0.08073,
+      "ks": 0.0,
+      "threshold_050": {
+        "threshold": 0.5,
+        "accuracy": 0.91927,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mcc": 0.0,
+        "tn": 56538,
+        "fp": 0,
+        "fn": 4965,
+        "tp": 0,
+        "total_cost_pen": 8937000.0,
+        "cost_per_applicant_pen": 145.31
+      },
+      "threshold_optimal_cost": {
+        "threshold": 0.05,
+        "accuracy": 0.91927,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mcc": 0.0,
+        "tn": 56538,
+        "fp": 0,
+        "fn": 4965,
+        "tp": 0,
+        "total_cost_pen": 8937000.0,
+        "cost_per_applicant_pen": 145.31
+      }
+    }
+  },
+  "logistic_regression_baseline": {
+    "hyperparameters": {
+      "imputer_num": "SimpleImputer(strategy='median')",
+      "scaler_num": "StandardScaler()",
+      "encoder_cat": "OrdinalEncoder(handle_unknown='use_encoded_value', unknown_value=-1, encoded_missing_value=-2)",
+      "penalty": "l2",
+      "C": 0.1,
+      "solver": "lbfgs",
+      "class_weight": "balanced",
+      "max_iter": 500,
+      "random_state": 42
+    },
+    "train_time_sec": 19.392,
+    "n_iter_actual": 125,
+    "train": {
+      "roc_auc": 0.76966,
+      "pr_auc": 0.24864,
+      "ks": 0.40661,
+      "threshold_050": {
+        "threshold": 0.5,
+        "accuracy": 0.70137,
+        "precision": 0.17139,
+        "recall": 0.70393,
+        "f1": 0.27567,
+        "mcc": 0.2344,
+        "tn": 158562,
+        "fp": 67586,
+        "fn": 5880,
+        "tp": 13980,
+        "total_cost_pen": 20721900.0,
+        "cost_per_applicant_pen": 84.2326
+      },
+      "threshold_optimal_cost": {
+        "threshold": 0.485,
+        "accuracy": 0.68496,
+        "precision": 0.1665,
+        "recall": 0.72452,
+        "f1": 0.27077,
+        "mcc": 0.23169,
+        "tn": 154116,
+        "fp": 72032,
+        "fn": 5471,
+        "tp": 14389,
+        "total_cost_pen": 20652600.0,
+        "cost_per_applicant_pen": 83.9509
+      }
+    },
+    "val": {
+      "roc_auc": 0.76819,
+      "pr_auc": 0.25407,
+      "ks": 0.40181,
+      "threshold_050": {
+        "threshold": 0.5,
+        "accuracy": 0.70349,
+        "precision": 0.17078,
+        "recall": 0.69325,
+        "f1": 0.27404,
+        "mcc": 0.23079,
+        "tn": 39825,
+        "fp": 16713,
+        "fn": 1523,
+        "tp": 3442,
+        "total_cost_pen": 5248350.0,
+        "cost_per_applicant_pen": 85.3349
+      },
+      "threshold_optimal_cost": {
+        "threshold": 0.48,
+        "accuracy": 0.68223,
+        "precision": 0.16484,
+        "recall": 0.72205,
+        "f1": 0.2684,
+        "mcc": 0.22837,
+        "tn": 38374,
+        "fp": 18164,
+        "fn": 1380,
+        "tp": 3585,
+        "total_cost_pen": 5208600.0,
+        "cost_per_applicant_pen": 84.6886
+      }
+    },
+    "generalization_gap_roc_auc": 0.00147,
+    "model_artifact": "models/modelo_baseline_logreg.pkl"
+  }
+}
