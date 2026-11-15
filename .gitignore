@@ -37,6 +37,9 @@ data/processed/*
 !diccionario_*.csv
 !lista_*.csv
 !03-preparacion-datos/salida_fase3/tablas/*.csv
+!04-modelado/salida_fase4/*.csv
+!04-modelado/salida_fase4/tablas/*.csv
+04-modelado/salida_fase4/*_xgb_only*
 
 # ==========================================
 # 4. Modelos Entrenados Pesados
