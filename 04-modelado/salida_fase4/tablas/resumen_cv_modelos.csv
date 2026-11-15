@@ -1,0 +1,5 @@
+modelo,n_folds,cv_roc_auc_mean,cv_roc_auc_std,cv_pr_auc_mean,cv_pr_auc_std,cv_ks_mean,cv_ks_std,cv_mcc_050_mean,cv_mcc_opt_mean,cv_costo_opt_mean,cv_tiempo_mean_seg,cumple_meta_charter_075
+Dummy (Control),5,0.5,0.0,0.08073,0.0,0.0,0.0,0.0,0.0,145.31,0.01,False
+Regresión Logística (Baseline),5,0.76594,0.00231,0.24544,0.0068,0.40291,0.00533,0.23097,0.22875,84.49,13.17,True
+LightGBM (Candidato),5,0.78092,0.00268,0.27206,0.00805,0.42383,0.00607,0.25325,0.24407,81.56,29.79,True
+XGBoost (Candidato),5,0.78048,0.00246,0.26951,0.00808,0.42391,0.00454,0.2506,0.24206,81.58,44.25,True
