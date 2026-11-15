@@ -1,0 +1,15 @@
+services:
+  inference-service:
+    build:
+      context: .
+      dockerfile: services/inference-service/Dockerfile
+    container_name: home-credit-inference-service
+    ports:
+      - "${INFERENCE_PORT:-8000}:8000"
+    environment:
+      - MODELS_DIR=/app/models
+      - MODEL_FILENAME=${MODEL_FILENAME:-modelo_candidato_lgbm.pkl}
+      - METADATA_FILENAME=${METADATA_FILENAME:-metadata_inferencia.json}
+    volumes:
+      - ./models:/app/models:ro
+    restart: unless-stopped

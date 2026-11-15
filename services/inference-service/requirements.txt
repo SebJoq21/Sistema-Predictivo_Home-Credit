@@ -1,0 +1,11 @@
+# Dependencias del microservicio de inferencia (Fase 4 - Borrador funcional / Fase 6)
+fastapi==0.163.1
+uvicorn==0.54.0
+pydantic==2.14.3
+numpy==2.5.3
+pandas==3.0.6
+scikit-learn==1.9.1
+lightgbm==4.7.0
+xgboost==3.4.1
+joblib==1.6.0
+pyarrow==26.0.1

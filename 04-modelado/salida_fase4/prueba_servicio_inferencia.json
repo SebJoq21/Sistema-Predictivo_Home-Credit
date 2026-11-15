@@ -1,0 +1,227 @@
+{
+  "health_endpoint": {
+    "status": "ok",
+    "service": "home-credit-inference-service",
+    "phase": "Fase 4 - Modelado (Borrador Funcional)",
+    "model_loaded": true,
+    "model_name": "modelo_candidato_lgbm.pkl",
+    "loaded_at": "2026-11-15T18:58:48Z"
+  },
+  "model_info_summary": {
+    "model_name": "modelo_candidato_lgbm.pkl",
+    "n_features": 240,
+    "protected_excluded_features": [
+      "CODE_GENDER",
+      "NAME_EDUCATION_TYPE",
+      "NAME_FAMILY_STATUS"
+    ],
+    "thresholds": {
+      "standard_050": 0.5,
+      "optimal_expected_cost": 0.445,
+      "grey_zone_low_preliminary": 0.35,
+      "grey_zone_high_preliminary": 0.6
+    }
+  },
+  "single_predictions_verified": [
+    {
+      "sk_id_curr": 433604,
+      "probabilidad_impago": 0.09204,
+      "decision": "APROBAR_AUTOMATICO",
+      "requiere_revision_manual": false,
+      "umbral_optimo_costo": 0.445,
+      "rango_zona_gris": [
+        0.35,
+        0.6
+      ],
+      "modelo_utilizado": "modelo_candidato_lgbm.pkl",
+      "top_factores_modelo": [
+        {
+          "variable": "EXT_SOURCE_MEAN",
+          "familia": "Scores Externos (EXT_SOURCE)",
+          "gain_pct": 17.7036
+        },
+        {
+          "variable": "ORGANIZATION_TYPE",
+          "familia": "Demográficas, Empleo y Estabilidad",
+          "gain_pct": 8.5777
+        },
+        {
+          "variable": "EXT_SOURCE_PROD",
+          "familia": "Scores Externos (EXT_SOURCE)",
+          "gain_pct": 6.2906
+        },
+        {
+          "variable": "ANNUITY_TO_CREDIT_RATIO",
+          "familia": "Ratios Financieros y Montos",
+          "gain_pct": 3.1177
+        },
+        {
+          "variable": "OCCUPATION_TYPE",
+          "familia": "Demográficas, Empleo y Estabilidad",
+          "gain_pct": 2.4334
+        }
+      ],
+      "latencia_ms": 185.795,
+      "perfil_prueba": "perfil_bajo_riesgo",
+      "target_real_val": 0
+    },
+    {
+      "sk_id_curr": 345558,
+      "probabilidad_impago": 0.43144,
+      "decision": "ZONA_GRIS_REVISION_MANUAL",
+      "requiere_revision_manual": true,
+      "umbral_optimo_costo": 0.445,
+      "rango_zona_gris": [
+        0.35,
+        0.6
+      ],
+      "modelo_utilizado": "modelo_candidato_lgbm.pkl",
+      "top_factores_modelo": [
+        {
+          "variable": "EXT_SOURCE_MEAN",
+          "familia": "Scores Externos (EXT_SOURCE)",
+          "gain_pct": 17.7036
+        },
+        {
+          "variable": "ORGANIZATION_TYPE",
+          "familia": "Demográficas, Empleo y Estabilidad",
+          "gain_pct": 8.5777
+        },
+        {
+          "variable": "EXT_SOURCE_PROD",
+          "familia": "Scores Externos (EXT_SOURCE)",
+          "gain_pct": 6.2906
+        },
+        {
+          "variable": "ANNUITY_TO_CREDIT_RATIO",
+          "familia": "Ratios Financieros y Montos",
+          "gain_pct": 3.1177
+        },
+        {
+          "variable": "OCCUPATION_TYPE",
+          "familia": "Demográficas, Empleo y Estabilidad",
+          "gain_pct": 2.4334
+        }
+      ],
+      "latencia_ms": 326.915,
+      "perfil_prueba": "perfil_zona_gris",
+      "target_real_val": 0
+    },
+    {
+      "sk_id_curr": 218614,
+      "probabilidad_impago": 0.76057,
+      "decision": "RECHAZAR_AUTOMATICO",
+      "requiere_revision_manual": false,
+      "umbral_optimo_costo": 0.445,
+      "rango_zona_gris": [
+        0.35,
+        0.6
+      ],
+      "modelo_utilizado": "modelo_candidato_lgbm.pkl",
+      "top_factores_modelo": [
+        {
+          "variable": "EXT_SOURCE_MEAN",
+          "familia": "Scores Externos (EXT_SOURCE)",
+          "gain_pct": 17.7036
+        },
+        {
+          "variable": "ORGANIZATION_TYPE",
+          "familia": "Demográficas, Empleo y Estabilidad",
+          "gain_pct": 8.5777
+        },
+        {
+          "variable": "EXT_SOURCE_PROD",
+          "familia": "Scores Externos (EXT_SOURCE)",
+          "gain_pct": 6.2906
+        },
+        {
+          "variable": "ANNUITY_TO_CREDIT_RATIO",
+          "familia": "Ratios Financieros y Montos",
+          "gain_pct": 3.1177
+        },
+        {
+          "variable": "OCCUPATION_TYPE",
+          "familia": "Demográficas, Empleo y Estabilidad",
+          "gain_pct": 2.4334
+        }
+      ],
+      "latencia_ms": 290.049,
+      "perfil_prueba": "perfil_alto_riesgo",
+      "target_real_val": 0
+    }
+  ],
+  "batch_prediction_verified": {
+    "total_evaluados": 10,
+    "modelo_utilizado": "modelo_candidato_lgbm.pkl",
+    "latencia_total_ms": 295.872,
+    "resultados": [
+      {
+        "sk_id_curr": 396899,
+        "probabilidad_impago": 0.3924,
+        "decision": "ZONA_GRIS_REVISION_MANUAL",
+        "requiere_revision_manual": true
+      },
+      {
+        "sk_id_curr": 322041,
+        "probabilidad_impago": 0.37156,
+        "decision": "ZONA_GRIS_REVISION_MANUAL",
+        "requiere_revision_manual": true
+      },
+      {
+        "sk_id_curr": 220127,
+        "probabilidad_impago": 0.57685,
+        "decision": "ZONA_GRIS_REVISION_MANUAL",
+        "requiere_revision_manual": true
+      },
+      {
+        "sk_id_curr": 251531,
+        "probabilidad_impago": 0.29455,
+        "decision": "APROBAR_AUTOMATICO",
+        "requiere_revision_manual": false
+      },
+      {
+        "sk_id_curr": 345558,
+        "probabilidad_impago": 0.43144,
+        "decision": "ZONA_GRIS_REVISION_MANUAL",
+        "requiere_revision_manual": true
+      },
+      {
+        "sk_id_curr": 251419,
+        "probabilidad_impago": 0.63712,
+        "decision": "RECHAZAR_AUTOMATICO",
+        "requiere_revision_manual": false
+      },
+      {
+        "sk_id_curr": 433604,
+        "probabilidad_impago": 0.09204,
+        "decision": "APROBAR_AUTOMATICO",
+        "requiere_revision_manual": false
+      },
+      {
+        "sk_id_curr": 268026,
+        "probabilidad_impago": 0.09241,
+        "decision": "APROBAR_AUTOMATICO",
+        "requiere_revision_manual": false
+      },
+      {
+        "sk_id_curr": 218614,
+        "probabilidad_impago": 0.76057,
+        "decision": "RECHAZAR_AUTOMATICO",
+        "requiere_revision_manual": false
+      },
+      {
+        "sk_id_curr": 394494,
+        "probabilidad_impago": 0.469,
+        "decision": "ZONA_GRIS_REVISION_MANUAL",
+        "requiere_revision_manual": true
+      }
+    ]
+  },
+  "val_segmentation_coverage": {
+    "total_val_applicants": 61503,
+    "aprobar_automatico_pct": 55.68,
+    "zona_gris_manual_pct": 26.68,
+    "rechazar_automatico_pct": 17.64,
+    "automatizacion_total_pct": 73.32
+  }
+}
