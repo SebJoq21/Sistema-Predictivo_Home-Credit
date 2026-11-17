@@ -1,0 +1,5 @@
+modelo,brier_score_raw,brier_score_calibrado,prob_media_raw,prob_media_calibrada,interpretacion
+Dummy (Control),0.08073,0.08073,0.0,0.0,Baseline de referencia sin capacidad predictiva
+Regresión Logística (Baseline),0.19454,0.06721,0.40748,0.08043,Scorecard regulatorio lineal con balanced weights
+XGBoost (Candidato),0.17357,0.06594,0.37614,0.07258,Boosting depth-wise con scale_pos_weight
+LightGBM (Candidato Ganador),0.16331,0.06596,0.35605,0.06824,Mejor Brier Score global (menor error cuadrático)

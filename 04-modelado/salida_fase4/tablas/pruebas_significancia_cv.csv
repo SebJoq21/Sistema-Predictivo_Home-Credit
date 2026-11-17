@@ -1,0 +1,4 @@
+comparacion,diferencia_media_auc,desv_est_diff,intervalo_confianza_95_diff,t_statistic,df,p_value_ttest,wilcoxon_stat,p_value_wilcoxon,significativo_al_5pct,conclusion
+LightGBM vs. Regresión Logística,0.01498,0.00141,"[0.01323, 0.01672]",23.8046,4,1.8467941717654555e-05,0.0,0.0625,True,Diferencia altamente significativa a favor de LightGBM (p < 0.001)
+XGBoost vs. Regresión Logística,0.01453,0.00221,"[0.01179, 0.01728]",14.6973,4,0.00012471430920408332,0.0,0.0625,True,Diferencia altamente significativa a favor de XGBoost (p < 0.001)
+LightGBM vs. XGBoost,0.00044,0.00144,"[-0.00135, 0.00224]",0.6876,4,0.5295219237223047,7.0,1.0,False,Rendimiento discriminante estadísticamente equivalente (p > 0.05)
