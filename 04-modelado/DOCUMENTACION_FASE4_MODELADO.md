@@ -1,16 +1,6 @@
 # Documentación Integral — Fase 4: Modelado (CRISP-DM)
 ## Sistema Predictivo de Riesgo Crediticio (*Home Credit Default Risk*)
 
-* **Institución:** Universidad Nacional Mayor de San Marcos (UNMSM)  
-* **Facultad:** Facultad de Ingeniería de Sistemas e Informática (FISI) · **Escuela:** Ingeniería de Software  
-* **Asignatura:** Minería de Datos · **Docente:** Pedro Martín Lezama Gonzales  
-* **Grupo:** Grupo 12 · **Ciclo:** 8.° Ciclo (2026-II)  
-* **Integrantes:** Gabriel Sonny De la Cruz Aguilar · Diego Martin Arevalo Mauricio · Sebastian Joaquin Chicata Serrato · David Sebastian Piñarreta Rojas · Ashley Elizabeth Bayona Vera  
-* **Directorio Base Analizado:** [`Sistema-Predictivo_Home-Credit/04-modelado/`](file:///D:/Universidad/Ciclos/8%C2%B0%20CICLO/MINER%C3%8DA%20DE%20DATOS/PROYECTO/Sistema-Predictivo_Home-Credit/04-modelado)  
-* **Fecha de Certificación:** Noviembre de 2026  
-
----
-
 ## 1. Introducción y Propósito del Documento
 
 El presente documento consolida la arquitectura analítica, técnica y metodológica desarrollada para la **Fase 4: Modelado** según la metodología internacional **CRISP-DM** (*CRoss-Industry Standard Process for Data Mining*), correspondiente a la entrega de la **Sesión 12: Avance del Trabajo Integrador**.
